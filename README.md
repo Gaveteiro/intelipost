@@ -1,10 +1,10 @@
-[![Gem Version](https://badge.fury.io/rb/intelipost.svg)](http://badge.fury.io/rb/intelipost)
-[![Build Status](https://travis-ci.org/natuelabs/intelipost.svg?branch=master)](https://travis-ci.org/natuelabs/intelipost)
-[![Code Climate](https://codeclimate.com/github/natuelabs/intelipost/badges/gpa.svg)](https://codeclimate.com/github/natuelabs/intelipost)
-[![Test Coverage](https://codeclimate.com/github/natuelabs/intelipost/badges/coverage.svg)](https://codeclimate.com/github/natuelabs/intelipost/coverage)
+[![Gem Version](https://badge.fury.io/rb/intelipost-rb.svg)](http://badge.fury.io/rb/intelipost-rb)
+[![Build Status](https://travis-ci.org/Gaveteiro/intelipost-rb-rb.svg?branch=master)](https://travis-ci.org/Gaveteiro/intelipost-rb)
+[![Code Climate](https://codeclimate.com/github/Gaveteiro/intelipost-rb/badges/gpa.svg)](https://codeclimate.com/github/Gaveteiro/intelipost-rb)
+[![Test Coverage](https://codeclimate.com/github/Gaveteiro/intelipost-rb/badges/coverage.svg)](https://codeclimate.com/github/Gaveteiro/intelipost-rb/coverage)
 
 
-# intelipost
+# Intelipost
 Gem for the Intelipost API
 
 ### Usage:
