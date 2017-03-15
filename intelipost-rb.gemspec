@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'intelipost/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'intelipost'
+  spec.name          = 'intelipost-rb'
   spec.version       = Intelipost::VERSION
-  spec.authors       = ['Eduardo Sampaio']
-  spec.email         = ['eduardo@sampa.io']
+  spec.authors       = ['Celestino Gomes', 'Luiz Rocha']
+  spec.email         = ['tinorj@gmail.com', 'lsdrocha@gmail.com']
   spec.description   = %q{Gem to access the REST API of Intelipost}
   spec.summary       = %q{Gem to access the REST API of Intelipost}
-  spec.homepage      = 'http://github.com/natuelabs/intelipost'
+  spec.homepage      = 'http://github.com/gaveteiro/intelipost-rb'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)

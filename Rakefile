@@ -9,7 +9,7 @@ task :coverage do
 end
 
 task :console do
-  sh "irb -rubygems -r intelipost"
+  sh "irb -rubygems -r intelipost-rb"
 end
 
 task :default => :spec
