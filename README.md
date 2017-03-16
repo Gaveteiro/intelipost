@@ -1,5 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/intelipost-rb.svg)](http://badge.fury.io/rb/intelipost-rb)
-[![Build Status](https://travis-ci.org/Gaveteiro/intelipost-rb-rb.svg?branch=master)](https://travis-ci.org/Gaveteiro/intelipost-rb)
+[![Build Status](https://travis-ci.org/Gaveteiro/intelipost-rb.svg?branch=master)](https://travis-ci.org/Gaveteiro/intelipost-rb)
 [![Code Climate](https://codeclimate.com/github/Gaveteiro/intelipost-rb/badges/gpa.svg)](https://codeclimate.com/github/Gaveteiro/intelipost-rb)
 [![Test Coverage](https://codeclimate.com/github/Gaveteiro/intelipost-rb/badges/coverage.svg)](https://codeclimate.com/github/Gaveteiro/intelipost-rb/coverage)
 
