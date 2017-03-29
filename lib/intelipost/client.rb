@@ -23,7 +23,6 @@ module Intelipost
     def connection
       raise ArgumentError, "an api_key is required to connect" if api_key.nil?
 
-      Faraday::Middleware.register_middleware gzip: lambda { FaradayMiddleware::Gzip }
       Faraday.new(url: @uri.to_s) do |conn|
         conn.request :json
 
