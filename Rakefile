@@ -1,15 +1,17 @@
-require "bundler/gem_tasks"
+# frozen_string_literal: true
+
+require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)
 
 task :coverage do
   ENV['COVERAGE'] = 'true'
-  Rake::Task["spec"].execute
+  Rake::Task['spec'].execute
 end
 
 task :console do
-  sh "irb -rubygems -r intelipost-rb"
+  sh 'irb -rubygems -r intelipost-rb'
 end
 
-task :default => :spec
+task default: :spec
