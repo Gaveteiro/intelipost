@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'faraday',            '>= 0.11', '< 1.0'
   spec.add_dependency 'faraday_middleware', '>= 0.11', '< 1.0'
-  spec.add_dependency 'hashie',             '>= 3.4',  '< 3.6'
+  spec.add_dependency 'hashie',             '>= 3.5',  '< 3.6'
 
   spec.add_development_dependency 'bundler',   '>= 1.7.6'
   spec.add_development_dependency 'rake',      '~> 10.4.2'
