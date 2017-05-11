@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.intelipost.com.br/api/v1/cep_location/address_complete/04661100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      platform:
+      - intelipost-gem-test
+      User-Agent:
+      - Faraday v0.12.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Thu, 11 May 2017 00:23:20 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '322'
+      connection:
+      - close
+      server:
+      - nginx/1.11.13
+      access-control-expose-headers:
+      - production
+      production:
+      - 'false'
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - origin, x-requested-with, content-type, api_key, token, production, display-errors,
+        api-key, platform, debug, ignore-all-conversion
+      access-control-allow-methods:
+      - PUT, GET, POST, DELETE, OPTIONS
+      x-server:
+      - nginx_spr-sae1-prod-application03
+      front-end-https:
+      - 'on'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdGF0dXMiOiJPSyIsIm1lc3NhZ2VzIjpbXSwiY29udGVudCI6eyJzdGF0
+        ZSI6IlPDo28gUGF1bG8iLCJjaXR5IjoiU8OjbyBQYXVsbyIsIm5laWdoYm9y
+        aG9vZCI6IkphcmRpbSBVbXVhcmFtYSIsInN0cmVldCI6IkF2ZW5pZGEgSW50
+        ZXJsYWdvcyIsInN0YXRlX3Nob3J0IjoiU1AiLCJpYmdlIjoiMzU1MDMwOCIs
+        ImFkZGl0aW9uYWxfaW5mbyI6Ii0gZGUgODcxIGEgMjI1MSAtIGxhZG8gw61t
+        cGFyIiwiYmFpcnJvIjoiSmFyZGltIFVtdWFyYW1hIn0sInRpbWUiOiIwLjEg
+        bXMiLCJ0aW1lem9uZSI6IkFtZXJpY2EvU2FvX1BhdWxvIiwibG9jYWxlIjoi
+        cHRfQlIifQ==
+    http_version: 
+  recorded_at: Thu, 11 May 2017 00:23:20 GMT
+recorded_with: VCR 2.9.3

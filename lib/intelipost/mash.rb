@@ -1,7 +1,11 @@
+# frozen_string_literal: true
+
 module Intelipost
   class Mash < ::Hashie::Mash
+    disable_warnings if respond_to?(:disable_warnings)
+
     def success?
-      self.has_key?('status') and self.status == 'OK'
+      key?('status') && status == 'OK'
     end
 
     def failure?
@@ -9,8 +13,16 @@ module Intelipost
     end
 
     def all_messages
-      return unless self.has_key?('messages')
-      self.messages.map(&:text).join(';')
+      return unless key?('messages')
+      messages.map(&:text).join(';')
+    end
+
+    def length
+      self[:length]
+    end
+
+    def key
+      self[:key]
     end
   end
 end

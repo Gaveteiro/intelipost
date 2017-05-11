@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.intelipost.com.br/api/v1/quote
+    body:
+      encoding: UTF-8
+      string: '{"origin_zip_code":"04037-003","destination_zip_code":"06396-200","volumes":[{"weight":0.1,"volume_type":"BOX","cost_of_goods":100,"width":10,"height":10,"length":10}],"additional_information":{"free_shipping":false,"extra_cost_absolute":0,"extra_cost_percentage":0,"lead_time_business_days":0,"sales_channel":"hotsite","client_type":"gold","delivery_method_ids":[1,2,3]}}'
+    headers:
+      platform:
+      - intelipost-gem-test
+      User-Agent:
+      - Faraday v0.12.1
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Thu, 11 May 2017 00:23:19 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '1764'
+      connection:
+      - close
+      server:
+      - nginx/1.11.13
+      access-control-expose-headers:
+      - production
+      production:
+      - 'false'
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - origin, x-requested-with, content-type, api_key, token, production, display-errors,
+        api-key, platform, debug, ignore-all-conversion
+      access-control-allow-methods:
+      - PUT, GET, POST, DELETE, OPTIONS
+      x-server:
+      - nginx_spr-sae1-prod-application05
+      front-end-https:
+      - 'on'
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","messages":[],"content":{"origin_zip_code":"4037003","destination_zip_code":"6396200","platform":"intelipost-gem-test","additional_information":{"extra_cost_absolute":0.0,"lead_time_business_days":0,"free_shipping":false,"delivery_method_ids":[1,2,3],"extra_cost_percentage":0.0,"tax_id":null,"client_type":"gold","sales_channel":"hotsite","payment_type":null,"is_state_tax_payer":null,"shipped_date":null,"calculate_estimated_date_exact":null},"identification":null,"quoting_mode":null,"id":1692119094,"client_id":8554,"created":1494462199856,"created_iso":"2017-05-10T21:23:19.856-03:00","delivery_options":[{"delivery_method_id":2,"delivery_estimate_business_days":8,"provider_shipping_cost":14.87,"final_shipping_cost":14.87,"description":"Correios
+        Sedex","delivery_note":"Entrega domiciliar diferenciada","removed_by_return_modes":false,"removed_by_quote_rules":false,"cubic_weight":0.167,"delivery_method_type":"EXPRESS","delivery_method_name":"Correios
+        Sedex","logistic_provider_name":"Correios","shown_to_client":true,"scheduling_enabled":false},{"delivery_method_id":1,"delivery_estimate_business_days":12,"provider_shipping_cost":16.45,"final_shipping_cost":16.45,"description":"Correios
+        PAC","delivery_note":"Entrega domiciliar diferenciada","removed_by_return_modes":false,"removed_by_quote_rules":false,"cubic_weight":0.167,"delivery_method_type":"STANDARD","delivery_method_name":"Correios
+        PAC","logistic_provider_name":"Correios","shown_to_client":true,"scheduling_enabled":false}],"volumes":[{"weight":0.1,"cost_of_goods":100.0,"width":10.0,"height":10.0,"length":10.0,"description":null,"sku_groups_ids":[],"product_category":null,"volume_type":"BOX"}],"cached":true},"time":"2.1
+        ms","timezone":"America/Sao_Paulo","locale":"pt_BR"}'
+    http_version: 
+  recorded_at: Thu, 11 May 2017 00:23:19 GMT
+- request:
+    method: get
+    uri: https://api.intelipost.com.br/api/v1/quote/1692119094
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      platform:
+      - intelipost-gem-test
+      User-Agent:
+      - Faraday v0.12.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Thu, 11 May 2017 00:23:19 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      content-length:
+      - '1765'
+      connection:
+      - close
+      server:
+      - nginx/1.11.13
+      access-control-expose-headers:
+      - production
+      production:
+      - 'false'
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - origin, x-requested-with, content-type, api_key, token, production, display-errors,
+        api-key, platform, debug, ignore-all-conversion
+      access-control-allow-methods:
+      - PUT, GET, POST, DELETE, OPTIONS
+      x-server:
+      - nginx_spr-sae1-prod-application02
+      front-end-https:
+      - 'on'
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","messages":[],"content":{"origin_zip_code":"4037003","destination_zip_code":"6396200","platform":"intelipost-gem-test","additional_information":{"extra_cost_absolute":0.0,"lead_time_business_days":0,"free_shipping":false,"delivery_method_ids":[1,2,3],"extra_cost_percentage":0.0,"tax_id":null,"client_type":"gold","sales_channel":"hotsite","payment_type":null,"is_state_tax_payer":null,"shipped_date":null,"calculate_estimated_date_exact":null},"identification":null,"quoting_mode":null,"id":1692119094,"client_id":8554,"created":1494462130059,"created_iso":"2017-05-10T21:22:10.059-03:00","delivery_options":[{"delivery_method_id":2,"delivery_estimate_business_days":8,"provider_shipping_cost":14.87,"final_shipping_cost":14.87,"description":"Correios
+        Sedex","delivery_note":"Entrega domiciliar diferenciada","removed_by_return_modes":false,"removed_by_quote_rules":false,"cubic_weight":null,"delivery_method_type":"EXPRESS","delivery_method_name":"Correios
+        Sedex","logistic_provider_name":"Correios","shown_to_client":true,"scheduling_enabled":false},{"delivery_method_id":1,"delivery_estimate_business_days":12,"provider_shipping_cost":16.45,"final_shipping_cost":16.45,"description":"Correios
+        PAC","delivery_note":"Entrega domiciliar diferenciada","removed_by_return_modes":false,"removed_by_quote_rules":false,"cubic_weight":null,"delivery_method_type":"STANDARD","delivery_method_name":"Correios
+        PAC","logistic_provider_name":"Correios","shown_to_client":true,"scheduling_enabled":false}],"volumes":[{"weight":0.1,"cost_of_goods":100.0,"width":10.0,"height":10.0,"length":10.0,"description":null,"sku_groups_ids":null,"product_category":null,"volume_type":"BOX"}],"cached":false},"time":"3.7
+        ms","timezone":"America/Sao_Paulo","locale":"pt_BR"}'
+    http_version: 
+  recorded_at: Thu, 11 May 2017 00:23:19 GMT
+recorded_with: VCR 2.9.3
