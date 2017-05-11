@@ -72,10 +72,11 @@ describe Intelipost::Client, :vcr do
   context "dealing with zipcode (cep)" do
     it "returns a Intelipost::Mash on successful query" do
       response = subject.cep.address_complete.get("04661100")
+
       expect(response.class).to eq Intelipost::Mash
       expect(response.success?).to eq true
       expect(response.failure?).to eq false
-      expect(response.all_messages).to eq ""
+      expect(response.all_messages).to be_empty
       expect(response.messages).to be_empty
     end
   end
@@ -102,20 +103,21 @@ describe Intelipost::Client, :vcr do
           "lead_time_business_days" => 0,
           "sales_channel" => "hotsite",
           "client_type" => "gold",
-          "delivery_method_ids" => [ 4, 3, 2 ]
+          "delivery_method_ids" => [1, 2, 3]
         }
       }
     end
 
     it ".quote.create" do
-      expect(subject.quote.create(volumes)).to have_key(:content)
+      response = subject.quote.create(volumes)
+      expect(response).to have_key(:content)
     end
 
     it ".quote.create.failure" do
-      response = subject.quote.create({"failure"=>"failure"})
+      response = subject.quote.create(failure: 'failure')
       expect(response.success?).to eq false
       expect(response.failure?).to eq true
-      expect(response.all_messages).not_to eq ""
+      expect(response.all_messages).not_to be_empty
       expect(response.messages).not_to be_empty
     end
 
